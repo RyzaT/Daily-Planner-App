@@ -1,6 +1,22 @@
-// Display the current day at the top of the calendar
+$(document).ready(function () {
+    // Display the current date and time
+    let NowMoment = moment().format('Do MMMM YYYY');
+    let displayDate = document.getElementById('currentDay');
+    displayDate.innerHTML = NowMoment;
+    let currentHour = moment().format('HH');
 
-// Present timeblocks for standard business hours
+    // Button Function- clear contents & local storage
+    $("#clearFieldsBtn").click(function (event) {
+        event.preventDefault;
+        $("textarea").val("");
+        localStorage.clear();
+    });
+
+})
+
+
+
+
 
 // Color-code each timeblock based on past, present, and future
 

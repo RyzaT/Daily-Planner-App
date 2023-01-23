@@ -29,31 +29,26 @@ $(document).ready(function () {
     });
 
     // local storage when the save button is clicked
-    $(".saveBtn").click(function (event) {
-        event.preventDefault();
+    $(".saveBtn").click(function (timeSave) {
+        timeSave.preventDefault();
         var value = $(this).siblings(".time-block").val();
-        var time = $(this).parent().attr("id").split("-")[1];
-        localStorage.setItem(time, value);
+        var timeSave = $(this).parent().attr("id").split("-")[1];
+        localStorage.setItem(timeSave, value);
     });
 
     // Pull items from local storage and return to correct hour.
-    $("#hour-09 .timeblock").val(localStorage.getItem("09"));
-    $("#hour-10 .timeblock").val(localStorage.getItem("10"));
-    $("#hour-11 .timeblock").val(localStorage.getItem("11"));
-    $("#hour-12 .timeblock").val(localStorage.getItem("12"));
-    $("#hour-13 .timeblock").val(localStorage.getItem("13"));
-    $("#hour-14 .timeblock").val(localStorage.getItem("14"));
-    $("#hour-15 .timeblock").val(localStorage.getItem("15"));
-    $("#hour-16 .timeblock").val(localStorage.getItem("16"));
-    $("#hour-17 .timeblock").val(localStorage.getItem("17"));
+    $("#hour-09 .time-block").val(localStorage.getItem("09"));
+    $("#hour-10 .time-block").val(localStorage.getItem("10"));
+    $("#hour-11 .time-block").val(localStorage.getItem("11"));
+    $("#hour-12 .time-block").val(localStorage.getItem("12"));
+    $("#hour-13 .time-block").val(localStorage.getItem("13"));
+    $("#hour-14 .time-block").val(localStorage.getItem("14"));
+    $("#hour-15 .time-block").val(localStorage.getItem("15"));
+    $("#hour-16 .time-block").val(localStorage.getItem("16"));
+    $("#hour-17 .time-block").val(localStorage.getItem("17"))
 
-})
-
-
-
-
-
+});
 // Color-code each timeblock based on past, present, and future
 
-// enter an event when they click a timeblock.
+
 

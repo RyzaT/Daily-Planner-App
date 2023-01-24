@@ -20,7 +20,7 @@ The repository can be found at href: https://github.com/RyzaT/Daily-Planner-App
 
 This page can be found at href: https://ryzat.github.io/Daily-Planner-App/
 
-Alt text/assets/screenshot.png
+Alt text/starter/assets/Daily Planner screenshot.png
 
 ## Usage
 This repositorty is part of a bootcamp learning platform and is a part of my coursework. Please feel free to use it for your own studies.
